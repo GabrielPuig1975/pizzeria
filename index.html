@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta author="Gabriel Puig">
+    </meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logos/LogoTVG.jpg" />
+    <!--Bootstrap Styles-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap" rel="stylesheet">
+    <!---Fot awesome--->
+    <script src="https://kit.fontawesome.com/da35cd9b00.js" crossorigin="anonymous"></script>
+    <!---Estilos propios--->
+    <link rel="stylesheet" href="./styles/owner.css">
+    <title>Te va a gustar!!</title>
+</head>
+
+<body>
+    <header class="head">
+        <div class="title">
+            T
+        </div>
+        <div class="subTitle">
+            Te va a Gustar!!!
+        </div>
+    </header>
+    <main>
+        <div class="main-head">
+            <h3>Elegí tu sabor!!</h3>
+            <h4>221 640-4801</h4>
+            <h5 class="show hidde">
+                <!-- Button trigger modal -->
+                <i class="fa-solid fa-pizza-slice" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <p>Tu pedido!!</p>
+                </i>
+            </h5>
+        </div>
+    </main>
+    <!-------------------VARIEDADES--------------------->
+    <section class="gustos">
+        <div class="sabores">
+            <!---Mozzarella--->
+            <div class="lista">
+                <form id="form" class="eleccion">
+                    <label for="mozza">
+                        <input type="checkbox" name="mozzarella" id="mozza">
+                        Mozzarella
+                    </label>
+                    <!--Cebollas-->
+                    <label for="cebo">
+                        <input type="checkbox" name="cebollas" id="cebo">
+                        Cebollas
+                    </label>
+                    <!---Especial--->
+                    <label for="especial">
+                        <input type="checkbox" name="especial" id="especial">
+                        Especial
+                        <span>
+                            (Mozzarella, Ajíes asados, jamón)
+                        </span>
+                    </label>
+                    <!---Calabresa--->
+                    <label for="calabresa">
+                        <input type="checkbox" name="calabresa" id="calabresa"> Calabresa
+                        <span>
+                            (Mozzarella, Ajíes asados, Chorizo colorado o Longaniza, Cebolla)
+                        </span>
+                    </label>
+                    <!-- Anchoas -->
+                    <label>
+                        <input type="checkbox" name="anchoas" id="ancho">
+                        Anchoas
+                    </label>
+                    <!------Roquefort-------->
+                    <label for="roque">
+                        <input type="checkbox" name="roquefort" id="roque"> Roquefort
+                    </label>
+                    <!-------Napolitana------>
+                    <label for="napo">
+                        <input type="checkbox" name="napolitana" id="napo"> Napolitana
+                        <span>
+                            (Mozzarella, Tomates, Ajo y Perejil)
+                        </span>
+                    </label>
+                    <!----------Rúcula------------>
+                    <label for="rucu">
+                        <input type="checkbox" name="rucula" id="rucu"> Rúcula y Jamón Crudo
+                    </label>
+                    <!--Cheddar -->
+                    <label for="cheddar">
+                        <input type="checkbox" name="cheddar" id="cheddar">
+                        Cheddar
+                    </label>
+                    <!-------Albahaca------>
+                    <label for="alba">
+                        <input type="checkbox" name="albahaca" id="alba"> Albahaca y Tomate
+                    </label>
+                    <!----Puttanesca---->
+                    <label for="putta">
+                        <input type="checkbox" name="puttanesca" id="putta"> Puttanesca
+                        <span>
+                            (Tomates, Aceitunas, Anchoas)
+                        </span>
+                    </label>
+                    <label for="tvag">
+                        <input type="checkbox" name="tvag" id="tvag"> TVAG
+                        <span>
+                            (Rellena)
+                        </span>
+                    </label>
+                    </main>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-------------------  FOTOS ----------------------->
+    <section class="show-pics">
+        <div class="fotos">
+            <div class="fotos-slider">
+                <img src="./assets/images/albahaca.jpeg" alt="pizza de albahaca" id="picAlbahaca">
+                <img src="./assets/images/anchoas.jpeg" alt="anchoas" id="picAnchoas">
+                <img src="./assets/images/calabresa.jpeg" alt="calabresa" id="picCalabresa">
+                <img src="./assets/images/Cebollas.jpeg" alt="cebollas" id="picCebollas">
+                <img src="./assets/images/cheddar.jpeg" alt="cheddar" id="picCheddar">
+                <img src="./assets/images/Especial.jpeg" alt="especial" id="picEspecial">
+                <img src="./assets/images/napolitana.jpeg" alt="napolitana" id="picNapolitana">
+                <img src="./assets/images/Pizza-Muzzarella.jpg" alt="pizza de mozzarella" id="picMozzarella">
+                <img src="./assets/images/puttanesca.jpeg" alt="puttanesca" id="picPuttanesca">
+                <img src="./assets/images/roquefort.jpeg" alt="roquefort" id="picRoquefort">
+                <img src="./assets/images/rúculayjamón.jpeg" alt="rucula" id="picRucula">
+                <img src="./assets/images/TVG.jpeg" alt="TVG" id="picTVG">
+            </div>
+        </div>
+
+    </section>
+    <!-------------------  PEDIDOS  -------------------->
+    <section class="pedidos">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Te va a Gustar!!!</h1>-->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-------------Pedido--------------->
+                    <div class="modal-body">
+                        <div >
+                            Te va a Gustar
+                            <ul id="pedido">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <!--------------------------------->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---My script--->
+    <script src="./scripts/script.js"></script>
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

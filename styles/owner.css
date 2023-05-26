@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  font-family: var(--ff);
+  color: var(--c);
+  background-color: rgb(2, 2, 26);
+}
+:root {
+  --c: #fff;
+  --ff: "Purple Purse", cursive;
+}
+.head {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.title {
+  margin-top: 10px;
+  height: 86px;
+  align-self: center;
+  font-weight: bold;
+  font-size: 80px;
+  color: var(--c);
+  font-family: var(--ff);
+}
+.subTitle {
+  margin-bottom: 10px;
+  color: var(--c);
+  font-weight: bold;
+}
+.main-head {
+  display: flex;
+  flex-direction: column;
+}
+.hidde {
+  display: none;
+}
+.main-head,
+h4,
+h5 {
+  font-size: 1rem;
+  align-self: end;
+  margin-right: 11px;
+  cursor: pointer;
+}
+.main-head h5 i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 35.6px;
+  align-self: end;
+  margin-right: 15px;
+  color: rgb(241, 239, 100);
+}
+i p {
+  margin-top: 7px;
+  font-size: 12px;
+  font-family: initial;
+}
+.sabores {
+  display: flex;
+  min-width: 100vw;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.eleccion {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  column-gap: 20px;
+}
+.lista span {
+  font-size: small;
+  font-style: italic;
+}
+.fotos {
+  display: flex;
+  margin-top: 24px;
+  border: 3px solid transparent;
+  height: 200px;
+  width: 100vw;
+  overflow: hidden;
+}
+.fotos-slider,
+img {
+  display: flex;
+  width: 200px;
+  padding: 2px;
+  margin-left: 4px;
+  object-fit: cover;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.fotos-slider {
+  animation: slide 2s linear infinite;
+}
+.modal-body {
+  color:#000;
+  background-color: aquamarine;
+}
+.modal-body div {
+  font-size: 18px;
+}
+#pedido {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#pedido input {
+  margin-left: 12px;
+  width: 50px;
+  text-align: center;
+  font-size: 14px;
+}
